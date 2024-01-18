@@ -9,7 +9,32 @@
 
 
 
+public class Book {
+    private String title;
+    private String author;
+    private String isbn;
+    private int numPages;
 
-public class book {
-    
+    // Constructor
+    public Book(String title, String author, String isbn, int numPages) {
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+        this.numPages = numPages;
+    }
+
+    // DisplayInfo method
+    public void displayInfo() {
+        System.out.println("Title of book: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("ISBN: " + isbn);
+        System.out.println("Number of Pages: " + numPages);
+    }
+
+    public static void main(String[] args) {
+        Book myBook = new Book("Harry Potter and the Hogwarts", "Golden Boy", "hp10867882023", 202);
+
+        myBook.displayInfo();
+    }
 }
+
