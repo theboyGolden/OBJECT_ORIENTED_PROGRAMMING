@@ -9,3 +9,27 @@
 
 
 
+public class Student {
+    private String name;
+    private String id;
+    private double grade;
+
+
+    public void displayInfo(){
+        System.out.println("Name of Student: " + name);
+        System.out.println("Student id: " + id );
+        System.out.println("Grade of Student: " + grade);
+    }
+    
+    Student (String name, String id, double grade) {
+        this.name = name;
+        this.id = id;
+        this.grade = grade;
+    }
+
+    public static void main (String [] args){
+        Student student1 = new Student ("Golden Boy", "Gb11020678", 96.00);
+
+        student1.displayInfo();
+    }
+}
