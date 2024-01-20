@@ -21,7 +21,64 @@
 // Display information about their name, age, and type.
 
 
+public interface Animal {
+    void makeSound();
+    void move();
+}
+
+class Lion implements Animal {
+    private String mane;
+    private String name;
+    private int age;
+
+    public Lion(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("The Lion is roaring");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("The lion is running.");
+    }
+}
+
+class Fish implements Animal {
+    private String finType;
+    private String name;
+    private int age;
+
+    public Fish(String name, int age, String finType) {
+        this.name = name;
+        this.age = age;
+        this.finType = finType;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("The Fish makes a splashing sound");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("The fish is moving");
+    }
+}
 
 public class Zoo {
-    
+    public static void main(String[] args) {
+        // create objects of each type of animal
+        Lion lion1 = new Lion("Simba", 5);
+        Fish fish1 = new Fish("Muska", 5, "scalefin");
+
+        lion1.makeSound();
+        lion1.move();
+        fish1.makeSound();
+        fish1.move();
+    }
 }
+
