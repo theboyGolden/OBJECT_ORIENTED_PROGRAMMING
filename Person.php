@@ -11,28 +11,33 @@ getFullName(): A method that returns the full name of the person by combining th
 getAge(): A method that returns the age of the person.
 Finally, create an instance of the Person class, set values for the properties, and call the methods to display the full name and age. -->
 
-<php>
+<?php
 
 Class Person {
     public $firstName;
     public $lastName;
     public $age;
 
-    getFullName () {
-        return "$this->firstName $this->lastName";
+    public function getFullName () {
+        echo "$this->firstName $this->lastName";
     }
 
-    getAge () {
-        return "$this->age"
+    public function getAge () {
+        echo "$this->age";
     }
 
 }
 
-Person () {
-    $this.firstName = "Golden";
-    $this.lastName = "Boy";
-    $this.age = 19;
-}
+$person = new Person ();
 
-Person.getFullName ();
-Person.getAge ();
+
+
+$person->firstName = "Golden";
+$person->lastName = "Boy";
+$person->age = 19;
+
+
+echo 'Full Name: ' . $person->getFullName () . '<br>';
+echo 'Age: ' . $person->getAge () . '<br>';
+
+?>
