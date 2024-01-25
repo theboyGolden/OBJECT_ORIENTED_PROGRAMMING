@@ -9,3 +9,34 @@
 // MinNumber and MaxNumber (int): The range within which the player needs to guess.
 // GenerateSecretNumber(): A method that generates a random number within the specified range.
 // PlayGame(): A method that allows the player to guess the number and provides feedback (higher, lower, or correct).
+
+
+
+using System;
+
+
+public Class NumberGuessingGame {
+    private int SecretNumber;
+    private int MinNumber;
+    private int MaxNumber;
+
+
+    GenerateSecretNumber(){
+        Random rand = new Random();
+    }
+
+
+    PlayGame () {
+        Console.WriteLine("Welcome to the Number Guessing game!");
+
+        int attempts =0;
+        int guess;
+
+        do {
+            Console.Write ("Enter your guess: ");
+            string input = Console.ReadLine();
+
+            
+        }
+    }
+}
