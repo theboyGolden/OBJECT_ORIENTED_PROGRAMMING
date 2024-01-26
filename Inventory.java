@@ -35,3 +35,35 @@
 // Create the OnlineStore class with the specified properties and methods.
 // Implement the necessary methods to manage inventory, add items to the shopping cart, remove items, calculate the total cost, and process orders.
 // Write a Main class that demonstrates the usage of these classes. Create instances of OnlineStore, add products to the inventory, display the inventory, simulate customer shopping, and process orders.
+
+
+public Class Product {
+    private String productId;
+    private String productName;
+    private double unitPrice;
+    private int quantityInStock;
+
+
+    getProductId () {
+        return this.productId;
+    }
+
+    getProductName (){
+        return this.productName;
+    }
+
+    getUnitPrice () {
+        return this.unitPrice;
+    }
+
+    getQuantityInStock () {
+        return this.quantityInStock;
+    }
+
+    void updateStock (int quantity) {
+        if (this.quantityInStock + quantity < 0) throw new IllegalArgument
+        Exception("Cannot have negative stock amount");
+        this.quantityInStock += quantity;
+
+    }
+}
