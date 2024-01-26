@@ -67,3 +67,23 @@ public Class Product {
 
     }
 }
+
+
+public Class ShoppingCart {
+    private Map<String, Integer> itemMap = new HashMap<>();
+    addItem(Product p, int quantity) {
+        itemMap.putIfAbsent(p.getProductId(), quantity);
+        itemMap.replace(p.getProductId(), itemMap.get(p.getProductId()) + quantity);
+    
+    }
+
+    removeItem (Product product, int quantity){
+        Integer currentQuantity = itemMap.get(product.getProductId());
+        if (currentQuantity == null || quantity > currentQuantity) throw new
+        IllegalStateException("Not enough items in cart to fulfill request");
+        itemMap.replace(product.getProductId(), currentQuantity - quantity);
+        if (itemMap.get(product.getProductId()) == 0) itemMap
+        .remove(product.getProductId());
+        
+    }
+}
