@@ -1,0 +1,37 @@
+// Task: Inventory Management System
+// Class Definitions:
+// Product Class:
+
+// Properties:
+// productId (String)
+// productName (String)
+// unitPrice (double)
+// quantityInStock (int)
+// Methods:
+// getProductId(): String - returns the product ID.
+// getProductName(): String - returns the product name.
+// getUnitPrice(): double - returns the unit price of the product.
+// getQuantityInStock(): int - returns the quantity of the product in stock.
+// updateStock(int quantity): void - updates the stock of the product based on sales or restocking.
+// ShoppingCart Class:
+
+// Properties:
+// items (Map of Product to Integer)
+// Methods:
+// addItem(Product product, int quantity): void - adds a product with the specified quantity to the shopping cart.
+// removeItem(Product product, int quantity): void - removes a specified quantity of a product from the shopping cart.
+// calculateTotal(): double - calculates the total cost of items in the shopping cart.
+// OnlineStore Class:
+
+// Properties:
+// inventory (List of Product)
+// Methods:
+// addToInventory(Product product): void - adds a product to the store's inventory.
+// displayInventory(): void - displays the current inventory.
+// processOrder(ShoppingCart cart): void - processes an order by updating the inventory and displaying the receipt.
+// Requirements:
+// Create the Product class with the specified properties and methods.
+// Create the ShoppingCart class with the specified properties and methods.
+// Create the OnlineStore class with the specified properties and methods.
+// Implement the necessary methods to manage inventory, add items to the shopping cart, remove items, calculate the total cost, and process orders.
+// Write a Main class that demonstrates the usage of these classes. Create instances of OnlineStore, add products to the inventory, display the inventory, simulate customer shopping, and process orders.
