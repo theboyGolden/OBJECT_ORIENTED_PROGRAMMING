@@ -86,4 +86,12 @@ public Class ShoppingCart {
         .remove(product.getProductId());
         
     }
+
+}
+
+public Class OnlineStore {
+    inventory 
+    public Product getProduct(String id) throws ProductNotFoundException{
+        // code to retrieve a product from the database given an ID
+    }
 }
