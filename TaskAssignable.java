@@ -25,19 +25,16 @@
 
 
 
-
-
-
 // Step 1: TaskAssignable interface
 public interface TaskAssignable {
     void assignTask (User user);
 }
 
+// Step 2: User class implementing TaskAssignable
 public class User implements TaskAssignable {
     private String name;
     private String email;
     private List<Task> assignedTasks;
-}
 
 public class Task implements TaskAssignable {
     private String Title;
