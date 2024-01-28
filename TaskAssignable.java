@@ -51,3 +51,15 @@ public class Task implements TaskAssignable {
     private String status;
 
     // Constructor, getters, and setters
+// Step 4: TaskManagementApp class to test the functionality
+public class TaskManagementApp {
+    public static void main(String[] args) {
+        // Instantiate objects of User and Task classes
+        User user1 = new User();
+        User user2 = new User();
+        Task task1 = new Task();
+        Task task2 = new Task();
+
+        // Assign tasks to users
+        user1.assignTask(task1);
+        user2.assignTask(task2);
