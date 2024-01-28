@@ -63,3 +63,17 @@ public class TaskManagementApp {
         // Assign tasks to users
         user1.assignTask(task1);
         user2.assignTask(task2);
+        // Update task status
+        task1.updateStatus("in progress");
+        task2.updateStatus("completed");
+
+        // Display task details, assigned users, and status
+        System.out.println("Task 1: " + task1.getTitle());
+        System.out.println("Assigned User: " + task1.getAssignedUser().getName());
+        System.out.println("Status: " + task1.getStatus());
+
+        System.out.println("Task 2: " + task2.getTitle());
+        System.out.println("Assigned User: " + task2.getAssignedUser().getName());
+        System.out.println("Status: " + task2.getStatus());
+    }
+}
