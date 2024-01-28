@@ -36,10 +36,13 @@ public class User implements TaskAssignable {
     private String email;
     private List<Task> assignedTasks;
 
-public class Task implements TaskAssignable {
-    private String Title;
-    private String description;
-    private String status;
+// Constructor, getters, and setters
+
+@Override
+public void assignTask(User user) {
+    // Implement assignTask logic
+}
+}
 
     @Override
     public void assignTask (User user) {
