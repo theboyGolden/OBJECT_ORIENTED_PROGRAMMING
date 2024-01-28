@@ -44,17 +44,10 @@ public void assignTask(User user) {
 }
 }
 
-    @Override
-    public void assignTask (User user) {
-        if (!user.getAssignedTasks().contains(this)) {
-            user.getAssignedTasks().add(this);
-        } else {
-            System.out.println("This task is already assigned.");
-        }
-        }
-        public void updateStatus(String newStatus){
-            this.status = newStatus;
-        }
-    }
-}
+    // Step 3: Task class implementing TaskAssignable
+public class Task implements TaskAssignable {
+    private String title;
+    private String description;
+    private String status;
 
+    // Constructor, getters, and setters
